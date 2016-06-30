@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/button_padding"
+    tools:context="com.jprarama.courtcounterapp.MainActivity"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <fragment
+            android:id="@+id/fragmentTeamA"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:name="com.jprarama.courtcounterapp.CourtScoreFragment"
+            tools:layout="@layout/court_score_item">
+
+        </fragment>
+
+        <fragment
+            android:id="@+id/fragmentTeamB"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:name="com.jprarama.courtcounterapp.CourtScoreFragment"
+            tools:layout="@layout/court_score_item">
+
+        </fragment>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp"
+        style="@style/BaseButton"
+        android:text="@string/reset" />
+</RelativeLayout>

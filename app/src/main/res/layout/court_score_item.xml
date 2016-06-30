@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        style="@style/BaseText"
+        android:id="@+id/teamName"
+        android:textAllCaps="true"
+        android:textSize="@dimen/team_name_size"
+        android:text="@string/team_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        style="@style/BaseText"
+        android:text="@string/score"
+        android:textStyle="bold"
+        android:textSize="@dimen/team_score_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:padding="@dimen/button_padding"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            style="@style/BaseButton"
+            android:id="@+id/btn1point"
+            android:text="@string/point1" />
+
+        <Button
+            style="@style/BaseButton"
+            android:id="@+id/btn2points"
+            android:text="@string/point2" />
+
+        <Button
+            style="@style/BaseButton"
+            android:id="@+id/btn3points"
+            android:text="@string/point3" />
+    </LinearLayout>
+</LinearLayout>
