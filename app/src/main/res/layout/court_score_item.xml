@@ -14,6 +14,7 @@
 
     <TextView
         style="@style/BaseText"
+        android:id="@+id/score"
         android:text="@string/score"
         android:textStyle="bold"
         android:textSize="@dimen/team_score_size"

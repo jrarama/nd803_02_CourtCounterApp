@@ -39,5 +39,6 @@
         android:layout_alignParentBottom="true"
         android:layout_marginTop="10dp"
         style="@style/BaseButton"
+        android:id="@+id/reset"
         android:text="@string/reset" />
 </RelativeLayout>
