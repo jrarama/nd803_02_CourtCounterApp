@@ -17,8 +17,8 @@ public class MainActivity extends AppCompatActivity {
         final CourtScoreFragment teamA = (CourtScoreFragment) fm.findFragmentById(R.id.fragmentTeamA);
         final CourtScoreFragment teamB = (CourtScoreFragment) fm.findFragmentById(R.id.fragmentTeamB);
 
-        teamA.getTvTeamName().setText("Team A");
-        teamB.getTvTeamName().setText("Team B");
+        teamA.getTvTeamName().setText(getString(R.string.team_a));
+        teamB.getTvTeamName().setText(getString(R.string.team_b));
 
         Button reset = (Button) findViewById(R.id.reset);
         reset.setOnClickListener(new View.OnClickListener() {

@@ -63,6 +63,6 @@ public class CourtScoreFragment extends Fragment {
     }
 
     public void resetScore() {
-        tvScore.setText("00");
+        tvScore.setText(getString(R.string.score));
     }
 }
